@@ -2,10 +2,11 @@ import React, { Component } from "react";
 
 export default class Drip extends Component {
   render() {
-    let { message } = this.props.drip;
+    let { message, username } = this.props.drip;
     return (
       <div>
-        <span>{message}</span>
+        <span>{username}</span>
+        <h1>{message}</h1>
       </div>
     );
   }

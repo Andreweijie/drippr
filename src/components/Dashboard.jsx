@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import Drip from "./Drip";
-import db from "./firebase/firebase";
+import fire from "./firebase/firebase";
 import CreateDrip from "./CreateDrip";
 
+let db = fire.firestore();
 export default class Dashboard extends Component {
   state = {
     drips: []
@@ -25,7 +26,7 @@ export default class Dashboard extends Component {
     return (
       <div>
         <h1>Dashboard</h1>
-        <CreateDrip></CreateDrip>
+        <CreateDrip user={this.props.user}></CreateDrip>
         {this.state.drips.map(drip => {
           return <Drip drip={drip}></Drip>;
         })}

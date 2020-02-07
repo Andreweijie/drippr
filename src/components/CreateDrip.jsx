@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import db from "./firebase/firebase";
+import fire from "./firebase/firebase";
+let db = fire.firestore();
 
 export default class CreateDrip extends Component {
   state = {
@@ -12,7 +13,10 @@ export default class CreateDrip extends Component {
     e.preventDefault();
     const newDrip = {
       message: this.state.message,
-      createdAt: new Date()
+      user: this.props.user.uid,
+      username: this.props.user.displayName,
+      createdAt: new Date(),
+      isAReply: false
     };
 
     db.collection("drips").add(newDrip);
