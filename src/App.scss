@@ -1,20 +1,26 @@
 .App {
-  background-color: pink;
+  color: #1e2e3f;
+  background-color: #1988ff;
   margin: 0;
   .navbar {
+    color: #eff7ff;
     h1 {
       margin: 0;
     }
   }
   .dashboard {
-    background-color: skyblue;
+    background-color: #eff7ff;
     display: flex;
     flex-direction: column;
     align-items: center;
     .create-drip {
+      button {
+        background-color: #66afff;
+        color: #eff7ff;
+      }
     }
     .drip {
-      background-color: yellow;
+      background-color: #b0d5fc;
       margin: 8px;
       border-radius: 0.5em;
       width: 500px;

@@ -1,6 +1,11 @@
 .App {
-  background-color: pink;
+  color: #1e2e3f;
+  background-color: #1988ff;
   margin: 0;
+}
+
+.App .navbar {
+  color: #eff7ff;
 }
 
 .App .navbar h1 {
@@ -8,7 +13,7 @@
 }
 
 .App .dashboard {
-  background-color: skyblue;
+  background-color: #eff7ff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,8 +26,13 @@
           align-items: center;
 }
 
+.App .dashboard .create-drip button {
+  background-color: #66afff;
+  color: #eff7ff;
+}
+
 .App .dashboard .drip {
-  background-color: yellow;
+  background-color: #b0d5fc;
   margin: 8px;
   border-radius: 0.5em;
   width: 500px;
