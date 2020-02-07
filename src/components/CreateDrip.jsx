@@ -20,6 +20,9 @@ export default class CreateDrip extends Component {
     };
 
     db.collection("drips").add(newDrip);
+    this.setState({
+      message: ""
+    });
   };
   render() {
     return (
