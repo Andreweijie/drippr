@@ -26,7 +26,7 @@ export default class CreateDrip extends Component {
   };
   render() {
     return (
-      <div>
+      <div className="create-drip">
         <form>
           <input
             type="text"

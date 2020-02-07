@@ -1,0 +1,24 @@
+.App {
+  background-color: pink;
+  margin: 0;
+  .navbar {
+    h1 {
+      margin: 0;
+    }
+  }
+  .dashboard {
+    background-color: skyblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .create-drip {
+    }
+    .drip {
+      background-color: yellow;
+      margin: 8px;
+      border-radius: 0.5em;
+      width: 500px;
+      padding: 16px;
+    }
+  }
+}

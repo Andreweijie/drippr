@@ -24,8 +24,8 @@ export default class Dashboard extends Component {
   }
   render() {
     return (
-      <div>
-        <h1>Dashboard</h1>
+      <div className="dashboard">
+        <h1>Dripboard</h1>
         <CreateDrip user={this.props.user}></CreateDrip>
         {this.state.drips.map(drip => {
           return <Drip drip={drip}></Drip>;
